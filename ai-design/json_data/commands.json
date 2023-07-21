@@ -1,0 +1,43 @@
+{
+	"commands":[
+		
+		{
+			"command_name":"CREATE_PRIMITIVE",
+			"command_description":"this commands is a command to create a 3d object at a certain position",
+			"arguments":[
+				
+				{
+					"name":"object_type",
+					"type":"string",
+					"description":"object type allowed types are (box, capsule, cylinder, prism, sphere, torus, plane)"
+				},
+				
+				{
+					"name":"pos",
+					"type":"[float, float, float]",
+					"description":"position of the object in the format [x, y, z]"
+				},
+				
+				{
+					"name":"scale",
+					"type":"[float, float, float]",
+					"description":"scale of the object in the format [x, y, z]"
+				},
+				
+				{
+					"name":"orientation",
+					"type":"[float, float, float]",
+					"description":"orientation of the object in the format [x, y, z] with values in radians"
+				},
+				
+				{
+					"name":"color",
+					"type":"[float, float, float]",
+					"description":"rgb color of the object in the format [r, g, b] with values in the range 0-1"
+				},
+				
+			],
+		}
+		
+	]
+}

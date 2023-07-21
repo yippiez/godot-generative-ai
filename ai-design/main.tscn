@@ -1,0 +1,111 @@
+[gd_scene load_steps=2 format=3 uid="uid://bot1g3rewbm5v"]
+
+[ext_resource type="LabelSettings" uid="uid://dkkl2ahs3ij6o" path="res://addons/ai-design/sub_header.tres" id="1_f6ymy"]
+
+[node name="main" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 284.0
+offset_right = 1152.0
+offset_bottom = 648.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label4" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "OpenAI Key"
+
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "World Position Boundaries"
+
+[node name="Label2" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Min"
+label_settings = ExtResource("1_f6ymy")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="min_x" type="SpinBox" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 0.0
+step = 0.1
+allow_greater = true
+allow_lesser = true
+suffix = "m"
+
+[node name="min_y" type="SpinBox" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 0.0
+step = 0.1
+allow_greater = true
+allow_lesser = true
+suffix = "m"
+
+[node name="min_z" type="SpinBox" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 0.0
+step = 0.1
+allow_greater = true
+allow_lesser = true
+suffix = "m"
+
+[node name="Label3" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Max"
+label_settings = ExtResource("1_f6ymy")
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="max_x" type="SpinBox" parent="VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 0.0
+step = 0.1
+allow_greater = true
+allow_lesser = true
+suffix = "m"
+
+[node name="max_y" type="SpinBox" parent="VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 0.0
+step = 0.1
+allow_greater = true
+allow_lesser = true
+suffix = "m"
+
+[node name="max_z" type="SpinBox" parent="VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 0.0
+step = 0.1
+allow_greater = true
+allow_lesser = true
+suffix = "m"
+
+[node name="Label5" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Prompt"
+
+[node name="PromptInput" type="LineEdit" parent="VBoxContainer"]
+layout_mode = 2
+placeholder_text = "Prompt goes here..."
